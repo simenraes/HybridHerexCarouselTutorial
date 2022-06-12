@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import {  StyleSheet } from 'react-native'
+import CarouselCards from './CarouselCards'
+import {View} from "react-native-web";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <View style={styles.container}>
+          <h1> React native carousel tutorial</h1>
+        <CarouselCards />
+      </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+      marginTop: 30,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 50
   },
 });
